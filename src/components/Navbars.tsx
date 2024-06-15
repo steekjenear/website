@@ -22,6 +22,7 @@ import Link from "next/link";
 const navigation = [
   { name: "Blog", href: "/blog", current: false },
   { name: "FAQ", href: "/#FAQ", current: false },
+  { name: "App", href: "https://app.shitzuapes.xyz", current: false },
   { name: "Token Farm", href: "https://tkn.shitzuapes.xyz", current: false },
 ];
 
@@ -34,7 +35,7 @@ export default function Navbar() {
     <Disclosure as="nav" className="transparent">
       {({ open }) => (
         <>
-          <div className="mx-auto px-2 sm:px-6 lg:px-8">
+          <div className="max-w-landing mx-auto px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}

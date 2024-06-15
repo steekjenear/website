@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function LandingBlog({ blogs }: { blogs: TBlogMetadata[] }) {
   return (
     <div className="bg-primary py-24 sm:py-32">
-      <div className="mx-auto px-5 sm:px-10">
+      <div className="w-full max-w-landing mx-auto px-5 sm:px-10">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             From the blog
@@ -27,7 +27,7 @@ export default function LandingBlog({ blogs }: { blogs: TBlogMetadata[] }) {
                   {blog.tags[0]}
                 </span>
               </div>
-              <div className="group relative">
+              <div className="group relative flex-1">
                 <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
                   <Link href={`/blog/${blog.slug}`}>
                     <span className="absolute inset-0" />
